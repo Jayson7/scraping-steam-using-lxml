@@ -5,4 +5,5 @@ doc = lxml.html.fromstring(html.content)
 new_releases = doc.xpath('//div[@id="tab_newreleases_content"]')[0]
 # print(str(new_releases))
 titles = new_releases.xpath('.//div[@class="tab_item_name"]/text()')
-print(titles)
+# print(titles)
+prices = new_releases.xpath('.//div[@class="discount_final_price"]/text()')
