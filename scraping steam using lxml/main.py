@@ -35,7 +35,7 @@ for info in zip(titles,prices, tags, total_platforms):
     resp = {}
     resp['title'] = info[0]
     resp['price'] = info[1]
-    resp['tags'] = info[]
+    resp['tags'] = info[2]
     resp['platforms'] = info[3]
     output.append(resp)
 
